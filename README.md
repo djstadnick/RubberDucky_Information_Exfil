@@ -1,2 +1,2 @@
 # RubberDucky Exfil Scripts
-Using this for a testing platform
+Compilation of various information exfil scripts using rubber ducky coding.
