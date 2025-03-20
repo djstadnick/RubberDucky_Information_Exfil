@@ -1,3 +1,3 @@
-# testing
+# RubberDucky Exfil Scripts
 testing project
-Using this for a trial setup
+Using this for a testing platform
